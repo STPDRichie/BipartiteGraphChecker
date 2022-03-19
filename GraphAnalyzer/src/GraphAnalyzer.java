@@ -3,13 +3,11 @@ import java.util.*;
 public class GraphAnalyzer {
     public int nodeCount;
     public HashMap<Integer, ArrayList<Integer>> graph = new HashMap<>();
-    private NodeState[] nodeStates;
-    private NodePart[] nodeParts;
+    private final NodeState[] nodeStates;
+    private final NodePart[] nodeParts;
 
     public HashSet<Integer> firstPart = new HashSet<>();
     public HashSet<Integer> secondPart = new HashSet<>();
-
-    public GraphAnalyzer(){}
 
     public GraphAnalyzer(int nodeCount) {
         this.nodeCount = nodeCount;

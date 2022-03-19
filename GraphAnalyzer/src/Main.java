@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         try {
-            File input = new File("../input.txt");
+            File input = new File("input.txt");
             Scanner scanner = new Scanner(input);
 
             var nodeCount = Integer.parseInt(scanner.nextLine());
@@ -16,7 +16,7 @@ public class Main {
             for (var i = 0; i < nodeCount; i++)
                 graphAnalyzer.addNodeEdges(i + 1, scanner.nextLine());
 
-            FileWriter writer = new FileWriter("../output.txt");
+            FileWriter writer = new FileWriter("output.txt");
             if (graphAnalyzer.isGraphBipartite()) {
                 String result = "Y" +
                         graphAnalyzer.getPart(NodePart.FIRST) +

@@ -36,31 +36,5 @@ public class Main {
             System.out.println("Writing failed...");
             e.printStackTrace();
         }
-
-//        if (!graphAnalyzer.isGraphBipartite()) {
-//            try {
-//                FileWriter writer = new FileWriter("../output.txt");
-//                writer.write("N");
-//                writer.close();
-//                return;
-//            } catch (IOException e) {
-//                System.out.println("Writing failed...");
-//                e.printStackTrace();
-//            }
-//        }
-//
-//        try {
-//            String result = "Y" +
-//                    graphAnalyzer.getPart(NodePart.FIRST) +
-//                    " 0" +
-//                    graphAnalyzer.getPart(NodePart.SECOND);
-//
-//            FileWriter writer = new FileWriter("../output.txt");
-//            writer.write(result);
-//            writer.close();
-//        } catch (IOException e) {
-//            System.out.println("Writing failed...");
-//            e.printStackTrace();
-//        }
     }
 }
